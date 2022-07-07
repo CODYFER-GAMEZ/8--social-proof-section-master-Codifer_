@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+    --violeta-oscuro: hsl(300, 43%, 22%);
+    ---rosa-claro: hsl(333, 80%, 67%);
+    --violeta-opaco: hsl(303, 10%, 53%);
+    --whitee: hsl(300, 24%, 96%);
+    ;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--whitee);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+body .back {
+    position: absolute;
+    z-index: -10;
+}
+
+body .botom {
+    bottom: 0;
+    right: 0;
+}
+
+body .backdos {
+    display: none;
+}
+
+h1 {
+    color: var(--violeta-oscuro);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 30px
+}
+
+h2 {
+    color: var(--whitee);
+    font-size: 15px;
+}
+
+h3 {
+    color: var(--violeta-oscuro);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+main {
+    /*outline: 3px solid black;*/
+    margin: auto;
+    width: 80%;
+    height: auto;
+    padding: 35px;
+    display: grid;
+    align-content: space-between;
+}
+
+
+/* titulo --------------*/
+
+.container_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titulo {
+    width: 50%;
+    height: 265px;
+}
+
+.parrafo_titulo {
+    /*outline: 2px solid red;*/
+    width: 90%;
+    color: var(--violeta-opaco);
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+
+/* estrella -------------*/
+
+.estrellas {
+    width: 50%;
+    height: 255px;
+    padding: 35px 15px;
+    display: grid;
+    align-content: space-between;
+}
+
+.estrella {
+    padding-left: 20px;
+    background: var(--whitee);
+    display: flex;
+    width: 85%;
+    height: 50px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.img_estrella {
+    margin-right: 25px;
+}
+
+.estre_uno {
+    justify-self: left;
+}
+
+.estre_dos {
+    justify-self: center;
+}
+
+.estre_tres {
+    justify-self: right;
+}
+
+
+/* caja de tarjetas */
+
+.card_container {
+    /*outline: 2px solid red;*/
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    min-height: 250px;
+    height: auto;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+span {
+    color: var(---rosa-claro);
+    font-weight: 400;
+}
+
+.card {
+    /* outline: 2px solid red;*/
+    background: var(--violeta-oscuro);
+    border-radius: 9px;
+    width: 340px;
+    height: 220px;
+    padding: 15px 30px;
+    display: grid;
+    align-content: space-around;
+}
+
+p {
+    color: var(--whitee);
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+
+/*imagenes*/
+
+.imgg {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    align-items: center;
+    justify-content: right;
+    font-weight: 200;
+}
+
+.imgg img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.card_uno {
+    align-self: start;
+    margin-left: -12px;
+}
+
+.card_dos {
+    align-self: center;
+}
+
+.card_tres {
+    align-self: end;
+    margin-top: 5px;
+    margin-right: -12px;
+}
+
+
+/*  link de creador*/
+
+.creditos {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    position: bottom;
+}
+
+.creditos a {
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    color: hsl(228, 89%, 44%);
+    transition: border 1s;
+    transition-delay: 300ms;
+}
+
+.creditos a:hover {
+    border-bottom: 2px solid hsl(228, 89%, 44%);
+}
+
+@media (max-width:1200px) {
+    body .back {
+        display: none;
+    }
+    body .backdos {
+        position: absolute;
+        display: block;
+        width: 100%;
+        z-index: -10;
+    }
+    body .botomm {
+        bottom: 0;
+        right: 0;
+    }
+    .creditos a {
+        border-bottom: 2px solid transparent;
+        text-decoration: none;
+        color: hsl(228, 45%, 44%);
+        transition: border 1s;
+        transition-delay: 300ms;
+    }
+    body {
+        width: 100%;
+        height: auto;
+    }
+    main {
+        /*outline: 3px solid black;*/
+        height: auto;
+        justify-content: center;
+    }
+    main {
+        margin: auto;
+        height: auto;
+    }
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    .parrafo_titulo {
+        width: 100%;
+        font-size: 20px;
+        line-height: 1.3;
+        text-align: center;
+    }
+    .card_container {
+        /* outline: 2px solid yellow;*/
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .card {
+        margin: auto;
+        min-width: 350px;
+        min-height: 235px;
+    }
+    .container_text {
+        /* outline: 2px solid red;*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .titulo {
+        margin: auto;
+        height: auto;
+        min-width: 350px;
+        /* outline: 2px solid green;*/
+    }
+    .estrellas {
+        margin: auto;
+        min-width: 350px;
+        /* outline: 2px solid blue;*/
+    }
+    .estrella {
+        width: 100%;
+        /* outline: 2px solid black;*/
+        padding-left: 20px;
+        gap: 5px;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
