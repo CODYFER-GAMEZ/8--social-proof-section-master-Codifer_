@@ -130,8 +130,7 @@ main {
 /* caja de tarjetas */
 
 .card_container {
-    /*outline: 2px solid red;*/
-    margin-top: 30px;
+    margin-top: 65px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
